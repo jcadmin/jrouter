@@ -1,0 +1,14 @@
+apply from: "../app-library.gradle"
+
+
+android {
+
+    defaultConfig {
+        applicationId "com.joeyjiang.app.debug"
+    }
+
+}
+
+dependencies {
+
+}

@@ -1,0 +1,38 @@
+ext {
+    def support_version = '27.1.1'
+
+    plugins = [
+            library    : 'com.android.library',
+            application: 'com.android.application',
+            maven      : 'com.github.dcendents.android-maven',
+            bintray    : 'com.jfrog.bintray',
+            plugin     : 'com.jakewharton.butterknife'
+    ]
+
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+
+            minSdkVersion    : 17,
+            targetSdkVersion : 28,
+
+            versionCode      : 2300,
+            versionName      : "2.3.0",
+    ]
+
+    dependencies = [
+            // "com.android.support:support-v4:${support_version}",
+            support           : ["com.android.support:appcompat-v7:${support_version}",
+                                 "com.android.support:design:${support_version}",
+                                 "com.android.support:recyclerview-v7:${support_version}",
+                                 "com.android.support:cardview-v7:${support_version}",
+                                 "com.android.support:multidex:1.0.2",],
+
+            kotlin            : ["org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}"],
+
+            //arouter
+            arouterapi        : ["com.alibaba:arouter-api:1.4.1"],
+            aroutercompiler   : ["com.alibaba:arouter-compiler:1.2.2"],
+
+    ]
+}

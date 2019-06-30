@@ -1,0 +1,15 @@
+apply from: "../app-library.gradle"
+
+
+android {
+    defaultConfig {
+        applicationId "com.joeyjiang.jrouter"
+    }
+
+}
+
+dependencies {
+    implementation project(":biz_room")
+}
+
+
