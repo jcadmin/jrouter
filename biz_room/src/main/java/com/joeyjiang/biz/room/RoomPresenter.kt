@@ -2,11 +2,12 @@ package com.joeyjiang.biz.room
 
 import android.content.Context
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.alibaba.android.arouter.facade.template.IProvider
 import com.joeyjiang.common.data.room.RoomPresenterPathConstants
 import java.lang.ref.WeakReference
 
 @Route(path = RoomPresenterPathConstants.ROOM)
-class RoomPresenter : RoomContract.Presenter {
+class RoomPresenter : RoomContract.Presenter, IProvider {
 
     private var mView: WeakReference<RoomContract.View>? = null
     private var mContext: WeakReference<Context>? = null

@@ -1,8 +1,6 @@
 package com.joeyjiang.common.base
 
-import com.alibaba.android.arouter.facade.template.IProvider
-
-interface BasePresenter<T> : IProvider {
+interface BasePresenter<T> {
     /**
      * 初始化view
      */
